@@ -24,7 +24,7 @@
 
     import CountContext from './CountContext';
 
-    const initialCount = 0;
+    const initialCount = 0; //定义count的默认值
 
     //修改count事件处理函数，根据修改参数进行处理
     function reducer(state, action) {
