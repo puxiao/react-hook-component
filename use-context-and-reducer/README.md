@@ -14,6 +14,11 @@
 5、在子组件中用 useContext 获取全局变量；  
 6、在子组件中用 xxContext.dispatch 去抛出修改xx的事件，携带修改事件类型和参数；  
 
+#### 补充说明
+上面一直提到了 “抛出事件” “事件处理函数” "dispacth" 都是字面上的，不是真正意义上的事件驱动。  这些都只是 React 暴露给我们的函数或形参。 真正的事件驱动是由 React Hook 底层为我们完成的。
+
+以上观点仅为个人理解，不能保证100%正确。  
+
 #### 伪代码演示
 
 假设React组件需求为：  
@@ -77,7 +82,11 @@
     export default ChildCopmpoent;
 
 
-本文件夹中创建了3个子组件，ComponentA、ComponentB、ComponentC，他们分别可以实现对全局变量 count 的获取与修改。  
-并且任何一个子组件的修改，都会立即反映在其他子组件中。  
+真正的具体实现，请查看完整代码:  
+父组件：[ParentComponent.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/ParentComponent.js)  
+全局共享对象：[CountContext.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CountContext.js)  
+3个子组件：[CopmpoentA.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentA.js)   [CopmpoentB.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentB.js)   [CopmpoentC.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentC.js) 
+
+其中3个子组件分别可以实现对全局变量 count 的获取与修改。  并且任何一个子组件的修改，都会立即反映在其他子组件中。  
 
 至此通过 React Hook，实现了类似 Redux 全局数据管理效果。
