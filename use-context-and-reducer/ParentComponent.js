@@ -9,7 +9,6 @@ const initialCount = 0;
 function reducer(state, action) {
     switch (action.type) {
         case 'add':
-            console.log(state);
             return state + action.param;
         case 'sub':
             return state - action.param;
