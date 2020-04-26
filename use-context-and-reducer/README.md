@@ -87,8 +87,8 @@
 全局共享对象：[CountContext.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CountContext.js)  
 3个子组件：[CopmpoentA.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentA.js)   [CopmpoentB.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentB.js)   [CopmpoentC.js](https://github.com/puxiao/react-hook-component/blob/master/use-context-and-reducer/CopmpoentC.js) 
 
-补充：  
-1、3个子组件他们主要区别是组件内 doHandler 函数；  
+总结：  
+1、3个子组件他们主要区别是组件内 doHandler 函数，对count进行不同形式的修改；  
 2、3个子组件分别可以实现对全局变量 count 的获取与修改；  
 3、当任何一个子组件对count进行了修改，都会立即反映在其他子组件中，实现子组件之间的数据共享。  
 
