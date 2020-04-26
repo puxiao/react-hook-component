@@ -1,10 +1,10 @@
 import React, { useReducer } from 'react';
+import CountContext from './CountContext';
 import ComponentA from './ComponentA';
 import ComponentB from './ComponentB';
 import ComponentC from './ComponentC';
 
 const initialCount = 0;
-export const CountContext = React.createContext();
 
 function reducer(state, action) {
     switch (action.type) {
@@ -23,7 +23,7 @@ function reducer(state, action) {
 }
 
 function ParentComponent() {
-
+    
     const [count, dispatch] = useReducer(reducer, initialCount);
 
     return <CountContext.Provider value={{count,dispatch}}>
