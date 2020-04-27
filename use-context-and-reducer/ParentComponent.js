@@ -18,6 +18,7 @@ function reducer(state, action) {
             return initialCount;
         default:
             console.log('what?');
+            return state;
     }
 }
 
