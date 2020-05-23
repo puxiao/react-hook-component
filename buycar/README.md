@@ -3,7 +3,7 @@
 实现一个非常简单的 购物车详情页 商品编辑功能。  
 
 业务实现逻辑：  
-1、useBuycarData.js 负责管理整个购物清单数据的逻辑，内部定义一个 reducer 的函数，用来处理各种数据修改。同时对外暴露3个对象：list(购买清单列表信息)、cost(清单总费用)、dispatch(修改数据状态的dispatch)  
+1、useBuycarData.js 负责管理整个购物清单数据的逻辑，内部定义一个 reducer 的函数，用来处理各种数据修改。通过 useReducer() 对外暴露3个对象：list(购买清单列表信息)、cost(清单总费用)、dispatch(修改数据状态的dispatch)  
 2、Buycar.js 负责购物清单页的全部可视化对象，通过使用 useBuycarData() 获取清单数据并分发给各个模块。  
 3、BuycarContext.js 负责提供全局数据共享  
 4、List.js  负责渲染全部清单列表，通过useContext()获取 BuycarContext，将共享对象中的 list数据和dispatch对象 通过属性传值 传递给子组件。  
