@@ -13,7 +13,6 @@ function Buycar() {
                 <List />
                 <PayBt />
                 <hr style={{margin:'30px 0'}} />
-
             </div>
         </BuycarContext.Provider>
     )
