@@ -10,7 +10,7 @@
 5、ListItem.js 负责渲染单条清单，将父组件 List 传递过来的清单信息显示出来，当发生修改(改数量或删除本条清单)时，通过 dispatch 将要进行的操作告知 useBuycarData。  
 6、PayBt.js 负责显示清单总费用和实现“订单提交”。  
 
-补充说明：OneProductData.js、OneItemData.js
+补充说明：OneProductData.js、OneItemData.js  
 由于未使用TypeScript编写，所以临时用2个数据模型代替。  
 OneProductData.js 用来定义 某商品的属性信息 数据模型(商品pid、商品名称、商品单价) 
 OneItemData.js 用来定义 购物清单上的单条记录 数据模型(除商品信息外，还有购买数量、费用小计)
