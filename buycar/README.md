@@ -12,5 +12,5 @@
 
 补充说明：OneProductData.js、OneItemData.js  
 由于未使用TypeScript编写，所以临时用2个数据模型代替。  
-OneProductData.js 用来定义 某商品的属性信息 数据模型(商品pid、商品名称、商品单价) 
+OneProductData.js 用来定义 某商品的属性信息 数据模型(商品pid、商品名称、商品单价)  
 OneItemData.js 用来定义 购物清单上的单条记录 数据模型(除商品信息外，还有购买数量、费用小计)
