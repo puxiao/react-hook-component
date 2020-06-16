@@ -13,13 +13,13 @@ const useDrag = (elementRef,unit='px',initialPostion={left:0,top:0}) => {
 
     const configListener = (boo) => {
         if(boo){
-            document.body.addEventListener('mouseup',handleMouseUp);
-            document.body.addEventListener('mousemove',handleMouseMove);
-            document.body.addEventListener('mouseout',handleMouseOut);
+            document.addEventListener('mouseup',handleMouseUp);
+            document.addEventListener('mousemove',handleMouseMove);
+            document.addEventListener('mouseout',handleMouseOut);
         }else{
-            document.body.removeEventListener('mouseup',handleMouseUp);
-            document.body.removeEventListener('mousemove',handleMouseMove);
-            document.body.removeEventListener('mouseout',handleMouseOut);
+            document.removeEventListener('mouseup',handleMouseUp);
+            document.removeEventListener('mousemove',handleMouseMove);
+            document.removeEventListener('mouseout',handleMouseOut);
         }
     }
 
